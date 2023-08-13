@@ -7,6 +7,7 @@ export default function Home() {
       {
         featuredProducts.map((product) => (
           <FeaturedImageLink
+            key={product.name}
             image={product.image}
             productName={product.name}
             headline={product.headline}

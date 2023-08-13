@@ -31,7 +31,7 @@ const Navbar = () => {
       <ul className='nav-items'>
         {
           navLinks.map(link => (
-            <li>
+            <li key={link.label}>
               <Link href={link.route} className='hover-accent'>
                 {link.label}
               </Link>
