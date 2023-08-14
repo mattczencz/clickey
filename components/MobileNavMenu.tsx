@@ -14,7 +14,7 @@ const MobileNavMenu = ({ open, setOpen }: Props) => {
         <div className='flex flex-col gap-4 border rounded-xl p-2'>
           {
             navLinks.map(link => (
-              <li>
+              <li key={link.label}>
                 <Link href={link.route} onClick={() => setOpen(false)}>
                   {link.label}
                 </Link>
