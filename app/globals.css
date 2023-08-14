@@ -7,11 +7,11 @@ html {
 }
 
 .main-nav {
-  @apply grid grid-cols-3 px-8 py-6 shadow-lg;
+  @apply relative flex justify-between items-center lg:grid lg:grid-cols-3 px-8 py-6 lg:shadow-lg;
 }
 
 .nav-items {
-  @apply flex justify-center gap-8;
+  @apply hidden lg:flex justify-center gap-8;
 }
 
 .nav-items li {
@@ -19,7 +19,11 @@ html {
 }
 
 .utility-nav {
-  @apply flex justify-end gap-8 text-xl items-center;
+  @apply hidden lg:flex justify-end gap-8 text-xl items-center;
+}
+
+.mobile-nav {
+  @apply bg-white px-8 pb-6 flex-col gap-4 lg:hidden;
 }
 
 .hover-accent {

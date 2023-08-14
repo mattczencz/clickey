@@ -1,4 +1,33 @@
-export const featuredProducts = [
+export const navLinks = [
+  {
+    route: '/keyboards',
+    label: 'Keyboards',
+  },
+  {
+    route: '/keycaps',
+    label: 'Keycaps',
+  },
+  {
+    route: '/switches',
+    label: 'Switches',
+  },
+  {
+    route: '/accessories',
+    label: 'Accessories',
+  }
+];
+
+export interface FeaturedProduct {
+  name: string;
+  headline: string;
+  link: string;
+  image: {
+    url: string;
+    alt: string | null;
+  };
+}
+
+export const featuredProducts: FeaturedProduct[] = [
   {
     name: 'StealthGlide',
     headline: 'Silent precision for seamless typing',
