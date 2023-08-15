@@ -1,6 +1,10 @@
+import PageSubHeader from '@/components/PageSubHeader';
+
 const KeycapsPage = () => {
   return (
-    <div>KeycapsPage</div>
+    <>
+      <PageSubHeader title='Keycaps' />
+    </>
   );
 };
 

@@ -23,8 +23,17 @@ export interface FeaturedProduct {
   link: string;
   image: {
     url: string;
-    alt: string | null;
+    alt?: string | null;
   };
+}
+
+export interface Product {
+  name: string;
+  rating?: {
+    score?: number;
+    total_reviews?: number;
+  };
+  price: string;
 }
 
 export const featuredProducts: FeaturedProduct[] = [
