@@ -1,4 +1,4 @@
-import { navLinks } from '@/dummy-data';
+import { navLinks } from '@/lib/links';
 import Link from 'next/link';
 import { LuShoppingCart, LuUser } from 'react-icons/lu';
 import { SignInButton, UserButton } from '@clerk/nextjs';
@@ -11,7 +11,7 @@ interface Props {
 const MobileNavMenu = ({ open, setOpen }: Props) => {
   return (
     <>
-      <ul className={`${open ? 'flex' : 'hidden'} mobile-nav`}>
+      <ul className={`${ open ? 'flex' : 'hidden' } mobile-nav`}>
         <div className='flex flex-col gap-4 border rounded-xl p-2'>
           {
             navLinks.map(link => (

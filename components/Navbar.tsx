@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { LuShoppingCart, LuAlignRight, LuSearch } from 'react-icons/lu';
 import { SignInButton, UserButton } from '@clerk/nextjs';
 import { SignedIn, SignedOut } from '@clerk/nextjs/app-beta/client';
-import { navLinks } from '@/dummy-data';
+import { navLinks } from '@/lib/links';
 import MobileNavMenu from './MobileNavMenu';
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
           <ul className='utility-nav'>
             <SignedIn>
-              <UserButton />
+              <UserButton afterSignOutUrl='/' />
             </SignedIn>
             <SignedOut>
               <SignInButton mode='modal'>
