@@ -1,6 +1,10 @@
+import PageSubHeader from '@/components/PageSubHeader';
+
 const AccessoriesPage = () => {
   return (
-    <div>AccessoriesPage</div>
+    <>
+      <PageSubHeader title='Accessories' />
+    </>
   );
 };
 

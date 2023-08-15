@@ -1,7 +1,8 @@
 import { navLinks } from '@/dummy-data';
 import Link from 'next/link';
 import { LuShoppingCart, LuUser } from 'react-icons/lu';
-
+import { SignInButton, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut } from '@clerk/nextjs/app-beta/client';
 interface Props {
   open: boolean;
   setOpen: Function;
@@ -23,11 +24,15 @@ const MobileNavMenu = ({ open, setOpen }: Props) => {
           }
         </div>
         <div className='flex flex-col gap-4 p-2 border rounded-xl'>
-          <li>
-            <Link href='/account' className='flex justify-between gap-4 items-center'>
-              Account {<LuUser />}
-            </Link>
-          </li> {/* TODO: implement auth / account login */}
+          <SignedOut>
+            <SignInButton>
+              <li>
+                <button className=''>
+                  Sign In
+                </button>
+              </li>
+            </SignInButton>
+          </SignedOut>
           <li>
             <Link href='/cart' className='flex justify-between gap-4 items-center'>
               Cart {<LuShoppingCart />}
@@ -35,7 +40,6 @@ const MobileNavMenu = ({ open, setOpen }: Props) => {
           </li> {/* TODO: implement cart */}
           <li className='p-2 border rounded-xl'>Search</li> {/* TODO: implement search feature */}
         </div>
-
       </ul>
     </>
   );

@@ -1,6 +1,10 @@
+import PageSubHeader from '@/components/PageSubHeader';
+
 const SwitchesPage = () => {
   return (
-    <div>SwitchesPage</div>
+    <>
+      <PageSubHeader title='Switches' />
+    </>
   );
 };
 

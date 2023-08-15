@@ -9,9 +9,9 @@ export default function Home() {
           <FeaturedImageLink
             key={product.name}
             image={product.image}
-            productName={product.name}
+            name={product.name}
             headline={product.headline}
-            linkRoute={product.link}
+            link={product.link}
           />
         ))
       }

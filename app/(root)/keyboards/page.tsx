@@ -1,6 +1,10 @@
+import PageSubHeader from '@/components/PageSubHeader';
+
 const KeyboardsPage = () => {
   return (
-    <div>KeyboardsPage</div>
+    <>
+      <PageSubHeader title='Keyboards' />
+    </>
   );
 };
 
