@@ -1,17 +1,23 @@
+import { useMemo } from 'react';
 import FeaturedImageLink from '@/components/FeaturedImageLink';
-import { featuredProducts } from '@/dummy-data';
+import { Product, products } from '@/lib/products';
 
 export default function Home() {
+  const featuredProducts = useMemo(
+    () => products.filter((product: Product) => product.featured),
+    [products]
+  );
+
   return (
     <>
       {
-        featuredProducts.map((product) => (
+        featuredProducts.map((product: Product) => (
           <FeaturedImageLink
-            key={product.name}
+            key={product.id}
             image={product.image}
             name={product.name}
-            headline={product.headline}
-            link={product.link}
+            headline={product.description.short}
+            link={`/${ product.category }s/${ product.id }`}
           />
         ))
       }

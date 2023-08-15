@@ -4,7 +4,7 @@ export default function SubpageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className='max-w-7xl m-auto'>
+    <div className='max-w-[1312px] m-auto px-8'>
       {children}
     </div>
   );
