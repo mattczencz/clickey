@@ -15,7 +15,7 @@ export type Product = {
     alt?: string;
   };
   featured: boolean;
-  category: 'keyboard' | 'keycap' | 'switch' | 'accessory';
+  category: 'keyboard' | 'keycap' | 'switch';
 };
 
 export const products: Product[] = [
@@ -208,5 +208,138 @@ export const products: Product[] = [
     },
     featured: false,
     category: 'keyboard',
+  },
+  {
+    id: 'mystichrome-legends',
+    name: 'MystiChrome Legends',
+    description: {
+      short: 'Transform your keyboard into a spectrum of enchanting colors with the MystiChrome Legends keycap set.',
+      long: 'Transform your keyboard into a spectrum of enchanting colors with the MystiChrome Legends keycap set. Each keycap is a masterpiece, featuring intricate designs that bring a touch of magic to your fingertips.',
+    },
+    rating: {
+      score: 4.6,
+      total_reviews: 1,
+    },
+    price: '$29.99',
+    image: {
+      url: 'https://nuphy.com/cdn/shop/files/CarmineClound_Main01Resize_230609_f4cb9150-efc6-4171-8ddf-5dcd8dd47409_900x.jpg?v=1686537791',
+      alt: '',
+    },
+    featured: false,
+    category: 'keycap',
+  },
+  {
+    id: 'neopixel-gems',
+    name: 'NeoPixel Gems',
+    description: {
+      short: 'Brighten your typing experience with the NeoPixel Gems keycap set.',
+      long: 'Brighten your typing experience with the NeoPixel Gems keycap set. These translucent gem-like keycaps emit a soft glow, creating an otherworldly ambiance as you type.',
+    },
+    rating: {
+      score: 3.5,
+      total_reviews: 12,
+    },
+    price: '$39.99',
+    image: {
+      url: 'https://nuphy.com/cdn/shop/files/CarmineClound_Main01_230323_900x.jpg?v=1683599677',
+      alt: '',
+    },
+    featured: false,
+    category: 'keycap',
+  },
+  {
+    id: 'steampunk-forge',
+    name: 'Steampunk Forge',
+    description: {
+      short: 'Immerse yourself in an era of industrial elegance with the Steampunk Forge keycap set.',
+      long: 'Immerse yourself in an era of industrial elegance with the Steampunk Forge keycap set. These intricately crafted keycaps evoke the aesthetic of Victorian machinery, adding a touch of vintage sophistication to your keyboard.',
+    },
+    rating: {
+      score: 4.9,
+      total_reviews: 73,
+    },
+    price: '$39.99',
+    image: {
+      url: 'https://www.melgeek.com/cdn/shop/products/T2.jpg?v=1689045807&width=700',
+      alt: '',
+    },
+    featured: false,
+    category: 'keycap',
+  },
+  {
+    id: 'natures-embrace',
+    name: 'Nature\'s Embrace',
+    description: {
+      short: 'Bring the beauty of the outdoors to your keyboard with the Nature\'s Embrace keycap set.',
+      long: 'Bring the beauty of the outdoors to your keyboard with the Nature\'s Embrace keycap set. Each keycap showcases a different element of nature, from delicate leaves to serene landscapes, providing a sense of tranquility while you type.',
+    },
+    rating: {
+      score: 4.9,
+      total_reviews: 73,
+    },
+    price: '$44.99',
+    image: {
+      url: 'https://www.thekapco.com/cdn/shop/products/gmk67-venice-set-319469.jpg?v=1689844170&width=1296',
+      alt: '',
+    },
+    featured: false,
+    category: 'keycap',
+  },
+  {
+    id: 'whispertech',
+    name: 'WhisperTech',
+    description: {
+      short: 'Experience the serenity of typing with the WhisperTech switch.',
+      long: 'Experience the serenity of typing with the WhisperTech switch. Designed for near-silent operation, these switches offer a tranquil typing experience without compromising on performance.',
+    },
+    rating: {
+      score: 5,
+      total_reviews: 114,
+    },
+    price: '$19.99',
+    image: {
+      url: 'https://nuphy.com/cdn/shop/files/NightBreezeV2_Main01_230803_900x.jpg?v=1691051977',
+      alt: '',
+    },
+    featured: false,
+    category: 'switch',
+  },
+  {
+    id: 'fusionglide-pro',
+    name: 'FusionGlide Pro',
+    description: {
+      short: 'Achieve the perfect blend of smoothness and tactile feedback with the FusionGlide Pro switch.',
+      long: 'Achieve the perfect blend of smoothness and tactile feedback with the FusionGlide Pro switch. Every keystroke feels like a seamless dance, making typing a true pleasure.',
+    },
+    rating: {
+      score: 4.2,
+      total_reviews: 33,
+    },
+    price: '$19.99',
+    image: {
+      url: 'https://nuphy.com/cdn/shop/products/Field75_Listing19v2_230320_900x.jpg?v=1683601957',
+      alt: '',
+    },
+    featured: false,
+    category: 'switch',
+  },
+  {
+    id: 'vorteximpact-ultra',
+    name: 'VortexImpact Ultra',
+    description: {
+      short: 'Unleash a storm of precision with the VortexImpact Ultra switch.',
+      long: 'Unleash a storm of precision with the VortexImpact Ultra switch. These switches provide a powerful tactile sensation, ensuring that every keystroke leaves an impact.',
+    },
+    rating: {
+      score: 4.4,
+      total_reviews: 19,
+    },
+    price: '$19.99',
+    image: {
+      url: 'https://nuphy.com/cdn/shop/products/switch-evored-01_900x.jpg?v=1683599805',
+      alt: '',
+    },
+    featured: false,
+    category: 'switch',
   },
 ];

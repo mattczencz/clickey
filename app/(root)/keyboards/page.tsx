@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import Link from 'next/link';
 import PageSubHeader from '@/components/PageSubHeader';
 import { Product, products } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';

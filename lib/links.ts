@@ -15,9 +15,5 @@ export const navLinks: Link[] = [
   {
     route: '/switches',
     label: 'Switches',
-  },
-  {
-    route: '/accessories',
-    label: 'Accessories',
   }
 ];
