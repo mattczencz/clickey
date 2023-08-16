@@ -7,9 +7,11 @@ import { SignInButton, UserButton } from '@clerk/nextjs';
 import { SignedIn, SignedOut } from '@clerk/nextjs/app-beta/client';
 import { navLinks } from '@/lib/links';
 import MobileNavMenu from './MobileNavMenu';
+import { useCartStore } from '@/store/CartStore';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const cartCount = useCartStore((state) => state.count);
 
   return (
     <nav className='shadow-md bg-white'>
@@ -52,6 +54,13 @@ const Navbar = () => {
               <Link href='/cart' className='hover-accent'>
                 {
                   <LuShoppingCart />
+                }
+                {
+                  cartCount > 0 && (
+                    <span className='w-6 h-6 bg-red-500 text-white font-bold flex items-center justify-center text-sm absolute -top-4 -right-6 rounded-full'>
+                      {cartCount}
+                    </span>
+                  )
                 }
               </Link>
             </li> {/* TODO: implement cart */}
