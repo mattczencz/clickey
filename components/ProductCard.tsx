@@ -5,7 +5,7 @@ import { Rating } from '@mui/material';
 
 const ProductCard = ({ id, name, rating, price, image, category }: Product) => {
   return (
-    <Link href={`/${ category }s/${ id }`} className='flex flex-col gap-2'>
+    <Link href={`/${ category !== 'switch' ? category : category + 'e' }s/${ id }`} className='flex flex-col gap-2'>
       <div className='relative w-full h-96 rounded-xl overflow-hidden'>
         <Image
           src={image.url}

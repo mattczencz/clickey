@@ -1,4 +1,4 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { authMiddleware } from '@clerk/nextjs';
 
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
@@ -12,8 +12,6 @@ export default authMiddleware({
     '/keycaps/:id',
     '/switches',
     '/switches/:id',
-    '/accessories',
-    '/accessories/:id',
     '/api/webhook/clerk'
   ],
   ignoredRoutes: ['/api/webhook/clerk']
