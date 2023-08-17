@@ -1,14 +1,19 @@
-import { FeaturedProduct } from '@/dummy-data';
 import Image from 'next/image';
 import Link from 'next/link';
 
+interface Props {
+  image: string;
+  link: string;
+  name: string;
+  headline: string | null;
+}
 
-const FeaturedImageLink = ({ image, link, name, headline }: FeaturedProduct) => {
+const FeaturedImageLink = ({ image, link, name, headline }: Props) => {
   return (
     <Link href={link} className='relative w-full h-[400px] lg:h-[1000px] flex justify-center items-center text-center'>
       <Image
-        src={image.url}
-        alt={image.alt ?? ''}
+        src={image}
+        alt={name}
         fill
         className='object-cover'
       />
